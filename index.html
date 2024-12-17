@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyCalcu</title>
+
+    <link rel="shortcut icon" href="img/calculator.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="calculator">
+        <h1>MyCalcu</h1>
+        <input type="text" id="display" readonly>
+        <div class="buttons">
+            <button onclick="clearDisplay(), enableButt ()">C</button>
+            <button class="butt" onclick="appendCharacter('/')">/</button>
+            <button class="butt" onclick="appendCharacter('*')">*</button>
+            <button class="butt" onclick="deleteLast()">DEL</button>
+
+            <button class="butt" onclick="appendCharacter('7')">7</button>
+            <button class="butt" onclick="appendCharacter('8')">8</button>
+            <button class="butt" onclick="appendCharacter('9')">9</button>
+            <button class="butt" onclick="appendCharacter('-')">-</button>
+
+            <button class="butt" onclick="appendCharacter('4')">4</button>
+            <button class="butt" onclick="appendCharacter('5')">5</button>
+            <button class="butt" onclick="appendCharacter('6')">6</button>
+            <button class="butt" onclick="appendCharacter('+')">+</button>
+
+            <button class="butt" onclick="appendCharacter('1')">1</button>
+            <button class="butt" onclick="appendCharacter('2')">2</button>
+            <button class="butt" onclick="appendCharacter('3')">3</button>
+            <button class="butt" onclick="calculateResult()">=</button>
+
+            <button class="butt" onclick="appendCharacter('0')" class="zero">0</button>
+            <button id="duble-zero" class="butt" onclick="appendCharacter('00')" class="zero">00</button>
+            <button class="butt" onclick="appendCharacter('.')">.</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
